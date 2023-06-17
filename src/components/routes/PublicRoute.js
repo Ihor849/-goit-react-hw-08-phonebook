@@ -11,6 +11,7 @@ const PublickRoute = ({restricted = false, redirectTo}) => {
 
  
   return redirect ?  <Navigate to={redirectTo} /> : <Outlet />
+  
 };
 
 export default PublickRoute;
