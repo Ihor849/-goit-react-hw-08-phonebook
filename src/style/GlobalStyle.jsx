@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+  background: #e9e9e9;
 }
 html {
   height: 100%;

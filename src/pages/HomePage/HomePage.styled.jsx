@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../../img/pngwing.com.png';
+import background from '../../img/pngwing2.png';
 
 export const Container = styled.div`
   min-height: calc(40vh - -800px);

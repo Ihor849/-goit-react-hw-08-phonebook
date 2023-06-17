@@ -1,9 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-// import { ReactComponent as Clapperboard } from '../../img/icons/Clapperboard.svg';
-// import { ReactComponent as Popcorn } from '../../img/icons/Popcorn.svg';
-import { Container, Header } from './SharedLayout.styled';
+import { ContainerShared, Header } from './SharedLayout.styled';
 import Navigation from 'components/Navigation/NavigationUser';
 import AuthNav from 'components/Navigation/AuthNav';
 import UserMenu from 'components/Navigation/UserMenu';
@@ -12,7 +10,7 @@ import { authSelectors } from 'redux/auth';
 const SharedLayouts = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   return (
-    <Container>
+    <ContainerShared className="containerShared">
       <Header>
         <Navigation />
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
@@ -20,7 +18,7 @@ const SharedLayouts = () => {
       <Suspense>
         <Outlet />
       </Suspense>
-    </Container>
+    </ContainerShared>
   );
 };
 

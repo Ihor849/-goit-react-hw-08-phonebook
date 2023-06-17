@@ -7,12 +7,12 @@ export default function AuthNav() {
       <StyledLink to="/register" 
       exact="true"
       >
-        Регистрация
+        Register
       </StyledLink>
       <StyledLink to="/login" 
       exact="true"
       >
-        Логин
+        Login
       </StyledLink>
     </div>
   );

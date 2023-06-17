@@ -1,5 +1,5 @@
-import Container from 'components/Container/Container';
-import { Form, Label } from 'pages/RegisterPage/RegisterPage.styled';
+
+import { Button, ButtonReg, Form, Label, Title, WrapperForm } from 'pages/RegisterPage/RegisterPage.styled';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from 'redux/auth';
@@ -32,8 +32,9 @@ export default function LoginPage() {
   };
 
   return (
-    <Container>
-      <h1>Страница логина</h1>
+    
+    <WrapperForm>
+      <Title>Страница логина</Title>
 
       <Form onSubmit={handleSubmit}
        autoComplete="on"
@@ -58,8 +59,8 @@ export default function LoginPage() {
           />
         </Label>
 
-        <button type="submit">Войти</button>
+        <ButtonReg type="submit">Войти</ButtonReg>
       </Form>
-    </Container>
+    </WrapperForm>
   );
 }

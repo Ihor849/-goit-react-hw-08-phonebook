@@ -1,7 +1,7 @@
 import { ContactFilter } from 'components/ContactFilter/ContactFilter';
 import ContactForm from 'components/ContactForm/ContactForm';
 import { ContactsList } from 'components/ContactList/ContactList';
-import Container from 'components/Container/Container';
+import {ContainerPhonebook} from './PhonebookPage.styled';
 
 import { Section } from 'components/Section/Section';
 
@@ -20,7 +20,7 @@ const PhonebookPage = () => {
   }, [ dispatch])
 
   return (
-    <Container>
+    <ContainerPhonebook>
       <Section title="Phonebook">
         <ContactForm />
       </Section>
@@ -32,7 +32,7 @@ const PhonebookPage = () => {
           <ContactFilter />
           <ContactsList />
       </Section>
-    </Container>
+    </ContainerPhonebook>
   );
 };
 export default PhonebookPage;

@@ -13,7 +13,7 @@ const Navigation = () => {
     <StyledLink to="/"
      exact="true"
      >
-      Главная
+      Home
     </StyledLink>
     {isLoggedIn && <StyledLink
       to="/phonebook"

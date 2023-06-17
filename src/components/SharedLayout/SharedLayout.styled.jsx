@@ -74,9 +74,12 @@ text-decoration: none;
   }
 `
 
-export const Container = styled.div`
-  display:block;
-  height: 100vh;
+export const ContainerShared = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  min-height: 100vh;
   margin: 15px auto;
   padding: 0 16px;
 

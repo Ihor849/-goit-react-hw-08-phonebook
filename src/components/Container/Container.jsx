@@ -3,7 +3,7 @@
 import { ContainerBox } from './Container.styled';
 
 export const Container = ({ children }) => {
-  return <ContainerBox classNames="container">{children}</ContainerBox>;
+  return <ContainerBox>{children}</ContainerBox>;
 };
 export default Container;
 
