@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-
-// import logoImage from 'images/logo-camera.png';
 import background from '../../img/zvezdnoe-nebo.jpg';
-// import propTypes from 'prop-types';
+
 
 
 // ++++++++++++++++++++ NavigationUser +++++++++++++++++++++ //
@@ -48,13 +46,10 @@ export const ContainerUser = styled.div`
   gap: 25px;
   align-items:center;
  z-index:100;
- /* padding-right:12px; */
-  
-
 `
 export const IMG=styled.img`
 width:32px;
-/* margin-right:8px; */
+
 `
 export const Span=styled.span`
 text-decoration: none;
@@ -79,7 +74,6 @@ export const ContainerShared = styled.div`
   flex-direction:column;
   align-items:center;
   gap:20px;
-  /* min-height: 100vh; */
   margin: 0 auto;
   padding: 0 16px;
 

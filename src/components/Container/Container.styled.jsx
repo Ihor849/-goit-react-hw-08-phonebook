@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import background from '../../img/diary-clip.png'
-// import background from '../../img/zvezdnoe-nebo.jpg';
 
 export const ContainerBox = styled.div`
   width: 900px;

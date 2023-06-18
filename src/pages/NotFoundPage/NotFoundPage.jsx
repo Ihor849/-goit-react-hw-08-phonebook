@@ -1,11 +1,12 @@
-import errorImage from '../../img/pageNotFound.png'
+import errorImage from "../../img/pageNotFound2.jpg"
+import { Img } from "./NotFoundPage.styled";
 
 
 export default function NotFoundPage() {
   return (
     <main role="alert" >
-      <img src={errorImage} width="650" alt="Error" />
-      <h1 >Page not found 😨</h1>
+      <Img src={errorImage} alt="Error" />
+      
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerUser, StyledLink } from 'components/SharedLayout/SharedLayout.styled';
+import { StyledLink } from 'components/SharedLayout/SharedLayout.styled';
 
 export default function AuthNav() {
   return (

@@ -25,10 +25,10 @@ const PhonebookPage = () => {
         <ContactForm />
       </Section>
       <Section title="Contacts ">
-        {/* <>
+        <>
             {contacts.length > 4 && <ContactFilter />}
             {contacts.length !== 0 && <ContactsList />} 
-          </> */}
+          </>
           <ContactFilter />
           <ContactsList />
       </Section>

@@ -3,8 +3,7 @@ import React from 'react';
 import { StyledLink } from 'components/SharedLayout/SharedLayout.styled';
 import { useSelector } from 'react-redux';
 import { authSelectors } from 'redux/auth';
-import AuthNav from './AuthNav';
-import { Icon } from '@chakra-ui/react';
+
 
 
 const Navigation = () => {

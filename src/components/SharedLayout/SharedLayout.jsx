@@ -10,7 +10,7 @@ import { authSelectors } from 'redux/auth';
 const SharedLayouts = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   return (
-    <ContainerShared className="containerShared">
+    <ContainerShared >
       <Header>
         <Navigation />
         {isLoggedIn ? <UserMenu /> : <AuthNav />}

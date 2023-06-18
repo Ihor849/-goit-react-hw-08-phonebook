@@ -1,16 +1,6 @@
 import React from 'react';
 import { Container, Title } from './HomePage.styled';
 
-// const HomePage = () => (
-//   <Container >
-//     <Title >
-//       Приветственная страница нашего сервиса{' '}
-//       <span role="img" aria-label="Иконка приветствия">
-//         💁‍♀️
-//       </span>
-//     </Title>
-//   </Container>
-// );
 
 const HomePage = () => (
   <Container >
