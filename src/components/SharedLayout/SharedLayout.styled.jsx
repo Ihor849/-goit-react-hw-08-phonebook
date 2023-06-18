@@ -79,8 +79,8 @@ export const ContainerShared = styled.div`
   flex-direction:column;
   align-items:center;
   gap:20px;
-  min-height: 100vh;
-  margin: 15px auto;
+  /* min-height: 100vh; */
+  margin: 0 auto;
   padding: 0 16px;
 
   &:before {

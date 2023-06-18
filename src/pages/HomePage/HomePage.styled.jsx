@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import background from '../../img/pngwing2.png';
 
 export const Container = styled.div`
-  min-height: calc(40vh - -800px);
+  /* min-height: calc(40vh - 50px); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
-    top: -15%;
+    top: 15%;
     left: 0%;
     width: 100%;
     height: 100%;
