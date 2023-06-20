@@ -10,25 +10,40 @@ import HomePage from 'pages/HomePage/HomePage';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import PrivateRoute from 'components/routes/PrivateRoute';
 import PublickRoute from 'components/routes/PublicRoute';
-
+import { authOperations, authSelectors } from 'redux/auth';
+import { Loader } from 'components/Loader';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 export const App = () => {
+  const dispatch = useDispatch();
 
-  return (
+  useEffect(() => {
+    dispatch(authOperations.fetchCurrentUser());
+  }, [dispatch]);
+
+  return authSelectors.isRefreshing ?   <Loader /> : (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route exact="true" index element={<HomePage />} />
 
-        <Route element={<PrivateRoute restricted redirectTo="/phonebook" />}>
-          <Route path="/phonebook" element={<PhonebookPage />} />
-        </Route>
-
-        <Route element={<PublickRoute restricted redirectTo="/phonebook" />}>
-          <Route path="login" element={<LoginPage />} />
-        </Route>
-
-        <Route element={<PublickRoute restricted redirectTo="/login" />}>
-          <Route path="register" element={<RegisterPage />} />
-        </Route>
+         <Route
+           path="/register"
+          element={
+            <PublickRoute redirectTo="/phonebook" component={<RegisterPage />} />
+          }
+        />
+         <Route
+          path="/login"
+          element={
+            <PublickRoute redirectTo="/phonebook" component={<LoginPage />} />
+          }
+        />
+        <Route
+          path="/phonebook"
+          element={
+            <PrivateRoute redirectTo="/login" component={<PhonebookPage />} />
+          }
+        />
 
       </Route>
       <Route exact="true" path="*" element={<NotFoundPage />} />

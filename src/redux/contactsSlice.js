@@ -62,7 +62,6 @@ const contactsSlice = createSlice({
     .addCase(updateContact.fulfilled,(state, action)=>{
       state.isLoading = false;
       state.error = null;
-      // state.allContacts = state.allContacts.filter(contact => contact.id !== action.payload.id);
       const index = state.allContacts.findIndex(
         contact => contact.id === action.payload.id
       );

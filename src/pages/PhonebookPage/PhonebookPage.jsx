@@ -29,8 +29,7 @@ const PhonebookPage = () => {
             {contacts.length > 4 && <ContactFilter />}
             {contacts.length !== 0 && <ContactsList />} 
           </>
-          <ContactFilter />
-          <ContactsList />
+          
       </Section>
     </ContainerPhonebook>
   );
